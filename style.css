@@ -244,7 +244,10 @@ hr{
 
 
 
-
+/* footer */
+footer .container .row ul li{
+    background-color:rgb(228, 222, 222);
+}
 
 
 
