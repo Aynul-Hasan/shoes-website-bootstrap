@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+hr{
+  
+    height: 3px !important;
+    margin: auto;
+    color: rgb(44, 2, 2) !important;
+}
+
+/*********navbar*********/
+.navbar1{
+    width: 100%;
+    /*position: fixed; */
+    background-color:rgb(228, 222, 222);
+    padding: 10px 0;
+}
+.container1{
+    padding: 0 30px;
+}
+.navbar1 .container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+.logo a:hover{
+    color: rgb(0, 0, 0);
+}
+.navbar1 .menu-list{
+    position: fixed;
+    left: -100%;
+    top: 0%;
+    height: 100vh;
+    width: 80%;
+    background: rgb(255, 255, 255);
+    max-width: 800px;
+    transition: all .9s ease-in-out; 
+    z-index: 1;
+}
+.navbar1 .menu-list.active{
+ left: 0%;
+}
+
+.menu-list li{
+    list-style: none;
+    padding: 35px 0;
+    margin-right: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+.menu-list li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  
+}
+.menu-list li:hover, .menu-list li a:hover{
+   background-color: rgb(219, 215, 215);
+   transition: .8s ease-in-out;
+   font-size: 30px;
+}
+.icon{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.cancel-btn{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    font-size: 30px;
+}
+/********home********/
+.r-1{
+    
+    margin-top: 20vh;
+}
+.home-div{
+    background-color: #000;
+    height: 60vh;
+    width: 60vh;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+}
+.home-img{
+    position: relative;
+    top: -50%;
+    transform:rotate(-30deg);
+}
+
+
+
+
+/***********featured************/
+.card{
+    border: none !important;
+    background-color: rgb(223, 217, 217) !important;
+    cursor: pointer;
+    transition: all .6s ease-in-out;
+   
+}
+.card:hover{
+    transform:translateY(-20px);
+}
+
+.fr-img{
+    width: 270px;
+    transform: rotate(-30deg);
+    margin: auto;
+}
+.fr-p{
+    background: #000;
+    color: #fff;
+}
+
+.container2{
+    margin: auto;
+   
+    background: rgb(196, 192, 192);
+    height: 55vh;
+    position: relative;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+}
+.container2:hover{
+    transform:translateY(-20px);
+}
+.cl-img{
+  position: absolute;
+  right: 0%;
+  z-index: 1;
+  width: 300px;
+  
+}
+.cr-text{
+    position: absolute;
+    bottom: 5% !important;
+    left: 10%;
+}
+
+
+/*********women*******/
+
+.wo-img{
+    margin: 20px 0;
+    transform:rotate(-30deg);
+    width: 250px;
+    margin: 20px 0;
+}
+
+.con3{
+    position: relative;
+    background-color: rgb(214, 213, 213);
+    height: 55vh;
+    margin-top: 50px !important;
+}
+.con3 img{
+    position: absolute;
+    left: 60%;
+    top: 0%;
+    height: 300px;
+}
+.off-text{
+    position: absolute;
+    top:40%;
+    left: 30%;
+}
+
+/*********new***************/
+.new-col{
+    background: rgb(216, 213, 213);
+    border-radius: 5px;
+    padding: 10px 0;
+    
+}
+.new-col-1{
+    
+    background: rgb(216, 213, 213);
+    border-radius: 5px;
+    padding: 13px 0;
+    margin: 10px;
+    position: relative;
+    
+}
+.overlay{
+    position:absolute;
+    transition: all .7s ease-in-out;
+    opacity: 0;
+    background: #000;
+    border-radius: 5px;
+}
+.new-col-1:hover .overlay{
+    opacity: .9;
+}
+.overlay a{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+         
+}
+
+.overlayleft{
+    height: 0%;
+    width: 100%;
+    left: 0%;
+    bottom: 0;
+}
+.new-col-1:hover .overlayleft{
+    height: 100%;
+}
+
+/******************all products**********/
+.all-img{
+    margin-top:20px ;
+    width: 200px;
+    transform: rotate(-30deg);
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:868px) {
+    header{
+        height: 90vh;
+    }
+    .home-div{
+        height: 35vh;
+        width: 35vh;
+    }
+    .cl-img{
+        width: 260px;
+    }
+    .fr-img{
+        width: 200px;
+    }
+    .wo-img{
+        width: 200px;
+        align-items: center;
+        margin: 20px auto;
+    }
+    .new-img{
+        width: 200px;
+    }
+    .new-col{
+        margin: 10px 5px;
+    }
+    .new-col-1 {
+        margin: 5px;
+    }
+    .con3{
+        position: relative;
+        height: 40vh;
+    }
+    .con3 img{
+      height: 180px;
+    }
+    .con3 .off-text{
+        
+        top: 30%;
+        left: 5% !important;
+    }
+}
